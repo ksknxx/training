@@ -1,0 +1,5 @@
+min = int(input("Введите минуты: "))
+hours = min // 60
+minhour= min % 60
+print("Часов:", hours)
+print("Минут с последнего часа:", minhour)
