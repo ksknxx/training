@@ -1,0 +1,9 @@
+st = input("Введите строку: ")
+bukva = input("Введите букву: ")
+if bukva in st:
+    first = st.index(bukva)
+    last = st.rindex(bukva)
+    print("Первое вхождение:", first)
+    print("Последнее вхождение:", last)
+else:
+    print("Буквы нет в строке")
