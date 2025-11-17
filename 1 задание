@@ -1,0 +1,7 @@
+team = input("Введите название команды: ")
+print(team, "- чемпион!")
+print("-" * len(team))
+low = team.lower()
+print("Длина названия:", len(low))
+print("Есть буква 'п':", "п" in low)
+print("Количество букв 'а':", low.count("а"))
