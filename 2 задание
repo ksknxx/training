@@ -1,0 +1,3 @@
+country = input("Введите государство: ")
+capital = input("Введите столицу: ")
+print("Государство -", country + ", столица -", capital)
