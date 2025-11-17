@@ -1,0 +1,6 @@
+st = input("Введите строку: ")
+subst = input("Введите подстроку: ")
+if subst.lower() in st.lower():
+    print("Подстрока есть")
+else:
+    print("Подстроки нет")
