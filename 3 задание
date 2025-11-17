@@ -1,0 +1,4 @@
+provodnik1 = 10.5
+provodnik2 = 15
+soprotivl = provodnik1 + provodnik2
+print(round(soprotivl, 1))
