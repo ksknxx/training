@@ -1,0 +1,11 @@
+text = input("Введите текст: ")
+text = text.replace(" ", "")
+c = {}
+for char in text:
+    c[char] = c.get(char, 0) + 1
+s = sorted(c.items(), key=lambda x: x[1], reverse=True)
+result = ""
+for i in range(3):
+    char, count = s[i]
+    result += f"{char} – {count} раз, "
+print(result[:-2])
