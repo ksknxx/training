@@ -1,0 +1,6 @@
+import math
+
+x = int(input("Введите x: "))
+y = int(input("Введите y: "))
+a = (math.sqrt(5) + 9) / (math.sqrt(x - 8) * y)
+print(round(a, 3))
