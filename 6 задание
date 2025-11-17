@@ -1,0 +1,18 @@
+import math
+a = float(input("a =: "))
+b = float(input("b =: "))
+c = float(input("c =: "))
+m = float(input("m =: "))
+n = float(input("n =: "))
+
+D = b * b - 4 * a * c
+if D < 0:
+    print("Нет корней")
+else:
+    x1 = (-b + math.sqrt(D)) / (2 * a)
+    x2 = (-b - math.sqrt(D)) / (2 * a)
+
+    if m <= x1 <= n or m <= x2 <= n:
+        print("Корень в отрезке")
+    else:
+        print("Корень не в отрезке")
