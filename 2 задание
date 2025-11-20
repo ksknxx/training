@@ -1,0 +1,8 @@
+l = ["dododo", "hello", "ksksksksks", "ab"]
+max_length = max(len(s) for s in l)
+m = []
+for s in l:
+    if len(s) < max_length:
+        s = s + "_" * (max_length - len(s))
+    m.append(s)
+print("Новый список:", m)
