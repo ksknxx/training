@@ -1,0 +1,19 @@
+def z(data):
+    if isinstance(data, str):
+        result = set(data)
+        print(f"Строка: '{data}'")
+        print(f"Множество: {result}")
+        print(f"Мощность множества (количество элементов): {len(result)}")
+        return result
+    elif isinstance(data, list):
+        result = set(data)
+        print(f"Список: {data}")
+        print(f"Множество: {result}")
+        print(f"Мощность множества (количество элементов): {len(result)}")
+        return result
+    else:
+        print("Ошибка: ожидается строка или список")
+        return None
+z("программирование")
+z([1, 2, 3, 2, 4, 1, 5, 3])
+print()
