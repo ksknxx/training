@@ -1,0 +1,19 @@
+def sorttup(t):
+    allint = True
+    for item in t:
+        if not isinstance(item, int):
+            allint = False
+            break
+    if allint:
+        o = list(t)
+        o.sort()
+        return tuple(o)
+    else:
+        return t
+num1 = (5, 2, 8, 1, 3)
+print(f"Исходный кортеж: {num1}")
+print(f"Отсортированный: {sorttup(num1)}")
+num2 = (5, 2, 'ВГУИТ', 1, 3)
+print(f"Исходный кортеж: {num2}")
+print(f"Результат: {sorttup(num2)}")
+print()
